@@ -1,0 +1,7 @@
+web:
+  image: nginx:latest
+  ports:
+    - "8080:80"
+  volumes:
+    - ./var/htdocs:/wwwroot
+    - ./etc/nginx.docker.config:/etc/nginx/conf.d/site.conf
