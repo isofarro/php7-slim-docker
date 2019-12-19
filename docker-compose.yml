@@ -5,3 +5,9 @@ web:
   volumes:
     - ./var/htdocs:/wwwroot
     - ./etc/nginx.docker.config:/etc/nginx/conf.d/site.conf
+  links:
+    - php
+php:
+  image: php:7-fpm
+  volumes:
+    - ./var/htdocs:/wwwroot
