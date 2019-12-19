@@ -3,11 +3,11 @@ web:
   ports:
     - "8080:80"
   volumes:
-    - ./var/htdocs:/wwwroot
+    - ./:/usr/local/web-app
     - ./etc/nginx.docker.config:/etc/nginx/conf.d/site.conf
   links:
     - php
 php:
   image: php:7-fpm
   volumes:
-    - ./var/htdocs:/wwwroot
+    - ./:/usr/local/web-app
