@@ -1,0 +1,15 @@
+{
+    "name": "isofarro/php-web-app",
+    "description": "Skeleton of a PHP7 webapp",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mike Davies",
+            "email": "isofarro2@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^0.6.0"
+    }
+}
