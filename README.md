@@ -9,8 +9,9 @@ Currently requires composer to run locally.
 
 * Self-contained application in `src/App.php` which uses `DI\Container` for it's services
 * Slim instantiated with our App's container.
-* `view` service in the container is Twig
+* `view` service in the container is a Twig instance
 * TwigMiddleware configured so that `url_for()` availble in templates for route-based URL creation
+* Web app runs on port 8080 of localhost
 
 ## Directories
 
@@ -32,7 +33,7 @@ In `/etc/hosts` add the following:
 
 ### Install
 
-Assumes composer is installed in on the host
+Assumes composer is installed on the host
 
     composer install
 
